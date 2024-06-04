@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Timeline: British Mandates and Israel</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Interactive Timeline: British Mandates and Israel</h1>
+        
+        <!-- Zoom In/Out Buttons -->
+        <div class="d-flex justify-content-center mb-3">
+            <button id="zoomIn" class="btn btn-primary mx-1">Zoom In</button>
+            <button id="zoomOut" class="btn btn-secondary mx-1">Zoom Out</button>
+        </div>
+
+        <!-- Filters -->
+        <div class="d-flex justify-content-center mb-3">
+            <button id="showAll" class="btn btn-info mx-1">Show All</button>
+            <button id="showWars" class="btn btn-danger mx-1">Show Wars</button>
+            <button id="showTreaties" class="btn btn-success mx-1">Show Treaties</button>
+            <button id="showDeclarations" class="btn btn-warning mx-1">Show Declarations</button>
+        </div>
+        
+        <!-- Timeline -->
+        <div class="timeline-container">
+            <div class="timeline">
+                <div class="event" data-year="1917" data-category="declaration" data-description="The Balfour Declaration was a public statement issued by the British government during World War I announcing support for the establishment of a 'national home for the Jewish people' in Palestine." title="Balfour Declaration">1917</div>
+                <div class="event" data-year="1920" data-category="treaty" data-description="The San Remo Conference was an international meeting where the Allied Supreme Council decided on the allocation of the Class 'A' mandates for administration of the former Ottoman territories of the Middle East." title="San Remo Conference">1920</div>
+                <div class="event" data-year="1922" data-category="declaration" data-description="The British Mandate for Palestine was a legal commission for the administration of the territory that had formerly constituted the Ottoman sanjaks of Nablus, Acre, the Southern part of the Vilayet of Beirut, and the Mutasarrifate of Jerusalem." title="British Mandate for Palestine">1922</div>
+                <div class="event" data-year="1936" data-category="war" data-description="The Arab Revolt in Palestine was a nationalist uprising by Palestinian Arabs against British colonial rule and mass Jewish immigration." title="Arab Revolt in Palestine">1936</div>
+                <div class="event" data-year="1947" data-category="treaty" data-description="The UN Partition Plan for Palestine was a proposal by the United Nations, which recommended a partition of Mandatory Palestine at the end of the British Mandate." title="UN Partition Plan">1947</div>
+                <div class="event" data-year="1948" data-category="declaration" data-description="The State of Israel was proclaimed on 14 May 1948. The establishment of Israel was followed by the 1948 Arab-Israeli War with neighboring Arab states." title="Establishment of Israel">1948</div>
+                <div class="event" data-year="1949" data-category="treaty" data-description="The 1949 Armistice Agreements were signed between Israel and neighboring Egypt, Jordan, Lebanon, and Syria to formally end the hostilities of the 1948 Arab-Israeli War." title="1949 Armistice Agreements">1949</div>
+                <div class="event" data-year="1956" data-category="war" data-description="The Suez Crisis was an invasion of Egypt by Israel, followed by the United Kingdom and France, aiming to regain Western control of the Suez Canal and remove Egyptian President Gamal Abdel Nasser." title="Suez Crisis">1956</div>
+                <div class="event" data-year="1964" data-category="declaration" data-description="The Palestine Liberation Organization (PLO) was founded with the aim of liberating Palestine through armed struggle." title="Founding of PLO">1964</div>
+                <div class="event" data-year="1967" data-category="war" data-description="The Six-Day War was fought between Israel and the neighboring states of Egypt, Jordan, and Syria. Israel achieved a decisive victory and captured the Sinai Peninsula, Gaza Strip, West Bank, Old City of Jerusalem, and the Golan Heights." title="Six-Day War">1967</div>
+                <div class="event" data-year="1973" data-category="war" data-description="The Yom Kippur War, also known as the October War, was a war fought by a coalition of Arab states led by Egypt and Syria against Israel." title="Yom Kippur War">1973</div>
+                <div class="event" data-year="1979" data-category="treaty" data-description="The Egypt-Israel Peace Treaty was signed in 1979, marking the first recognition of Israel by an Arab country and the return of the Sinai Peninsula to Egypt." title="Egypt-Israel Peace Treaty">1979</div>
+                <div class="event" data-year="1982" data-category="war" data-description="The 1982 Lebanon War, also known as Operation Peace for Galilee, was an invasion of southern Lebanon by Israel to expel the PLO." title="1982 Lebanon War">1982</div>
+                <div class="event" data-year="1987" data-category="war" data-description="The First Intifada was a Palestinian uprising against the Israeli occupation of the West Bank and Gaza." title="First Intifada">1987</div>
+                <div class="event" data-year="1993" data-category="treaty" data-description="The Oslo Accords were a series of agreements between Israel and the Palestine Liberation Organization (PLO) aiming to achieve a peace treaty." title="Oslo Accords">1993</div>
+                <div class="event" data-year="1994" data-category="treaty" data-description="The Israel-Jordan Peace Treaty was signed, making Jordan the second Arab country to normalize relations with Israel." title="Israel-Jordan Peace Treaty">1994</div>
+                <div class="event" data-year="2000" data-category="war" data-description="The Second Intifada was a period of intensified Israeli-Palestinian violence, which began in late September 2000." title="Second Intifada">2000</div>
+                <div class="event" data-year="2005" data-category="declaration" data-description="Israel unilaterally disengaged from the Gaza Strip, removing all Israeli settlers and military presence." title="Gaza Disengagement">2005</div>
+                <div class="event" data-year="2006" data-category="war" data-description="The 2006 Lebanon War was a 34-day military conflict in Lebanon, Northern Israel, and the Golan Heights." title="2006 Lebanon War">2006</div>
+                <div class="event" data-year="2008" data-category="war" data-description="The Gaza War, also known as Operation Cast Lead, was a three-week armed conflict between Palestinians in the Gaza Strip and Israel." title="Gaza War (2008)">2008</div>
+                <div class="event" data-year="2012" data-category="war" data-description="Operation Pillar of Defense was an eight-day Israel Defense Forces (IDF) operation in the Hamas-governed Gaza Strip." title="Operation Pillar of Defense">2012</div>
+                <div class="event" data-year="2014" data-category="war" data-description="The Gaza War, also known as Operation Protective Edge, was a military operation launched by Israel on 8 July 2014 in the Gaza Strip." title="Gaza War (2014)">2014</div>
+                <div class="event" data-year="2018" data-category="war" data-description="The Gaza border protests were a series of demonstrations held each Friday near the Gaza-Israel border." title="Gaza Border Protests">2018</div>
+                <div class="event" data-year="2020" data-category="treaty" data-description="The Abraham Accords were agreements between Israel and several Arab countries to normalize relations, marking a significant shift in Middle Eastern geopolitics." title="Abraham Accords">2020</div>
+                <div class="event" data-year="2021" data-category="war" data-description="The 2021 Israel-Palestine crisis, also known as the Gaza conflict, saw intense fighting between Israel and Hamas." title="2021 Gaza Conflict">2021</div>
+                <div class="event" data-year="2022" data-category="war" data-description="Operation Breaking Dawn was a brief military conflict between Israel and the Palestinian Islamic Jihad in Gaza." title="Operation Breaking Dawn">2022</div>
+                <div class="event" data-year="2023" data-category="war" data-description="The 2023 Huwara riots occurred when hundreds of Israeli settlers attacked the Palestinian town of Huwara." title="2023 Huwara Riots">2023</div>
+                <div class="event" data-year="2023" data-category="war" data-description="The October 7th attack, marking a significant escalation in the ongoing Israeli-Palestinian conflict." title="October 7th Attack">2023</div>
+                <div class="event" data-year="2024" data-category="war" data-description="Recent Israeli military operations aimed at countering threats and maintaining security in the region. A ceasefire was granted which was then broken with the Hamas attack of innocent civilians at a Isreali gas stations." title="Recent Operations">2024</div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <p>Made by Maxwell Keller</p>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="eventModalLabel"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

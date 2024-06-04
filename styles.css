@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #343a40;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.timeline-container {
+    overflow-x: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline {
+    position: relative;
+    max-width: 100%;
+    margin: 40px 0;
+    padding: 0 10px;
+    display: flex;
+    white-space: nowrap;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    width: 310%;
+    height:2px;
+    background-color: #000000;
+    top: calc(40%);
+    left: 0;
+    z-index: 1;
+}
+
+.event {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    background-color: #5facff;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 20px;
+    z-index: 2;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.event[data-category="war"] {
+    background-color: #dc3545;
+}
+
+.event[data-category="treaty"] {
+    background-color: #28a745;
+}
+
+.event[data-category="declaration"] {
+    background-color: #ffc107;
+}
+
+.event:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+
+.highlight {
+    background-color: #012280 !important;
+}
+
+#zoomIn, #zoomOut {
+    min-width: 100px;
+}
